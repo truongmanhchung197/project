@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Caculator</title>
+    <style>
+        td{
+            text-align: center;
+        }
+        input{
+            width: 90%;
+        }
+    </style>
+</head>
+<body>
+<form name="calulator">
+<table>
+    <tr>
+        <td colspan="4"><input type="text" name="res" value=""></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="1" onclick="document.calulator.res.value+='1'"></td>
+        <td> <input type="button" value="2" onclick="document.calulator.res.value+='2'"></td>
+        <td> <input type="button" value="3" onclick="document.calulator.res.value+='3'"></td>
+        <td> <input type="button" value="+" onclick="document.calulator.res.value+='+'"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="4" onclick="document.calulator.res.value+='4'"></td>
+        <td> <input type="button" value="5" onclick="document.calulator.res.value+='5'"></td>
+        <td> <input type="button" value="6" onclick="document.calulator.res.value+='6'"></td>
+        <td> <input type="button" value="-" onclick="document.calulator.res.value+='-'"></td>
+    </tr>
+    <tr>
+        <td> <input type="button" value="7" onclick="document.calulator.res.value+='7'"></td>
+        <td> <input type="button" value="8" onclick="document.calulator.res.value+='8'"></td>
+        <td> <input type="button" value="9" onclick="document.calulator.res.value+='9'"></td>
+        <td> <input type="button" value="*" onclick="document.calulator.res.value+='*'"></td>
+    </tr>
+    <tr>
+        <td> <input type="reset" value="C"></td>
+        <td> <input type="button" value="0" onclick="document.calulator.res.value+='0'"></td>
+        <td> <input type="button" value="=" onclick="document.calulator.res.value=eval(document.calulator.res.value)"></td>
+        <td> <input type="button" value="/" onclick="document.calulator.res.value+='/'"></td>
+    </tr>
+</table>
+</form>
+</body>
+</html>
